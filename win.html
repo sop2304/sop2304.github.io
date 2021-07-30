@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>  </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+
+var menu_text = new sjs.Text("you won, yay! ヾ(•ω•`)o",28,"black");
+menu_text.centerH();
+
+var game_text = new sjs.Text("click the botton below to play again!",28,"#ff0");
+game_text.centerH().offset(0, 60);
+
+var startBtn = new sjs.Button("Play again!", function(){
+window.location = "menu.html";
+});
+
+startBtn.center();
+
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1>  </h1>
+
+<div id="target" style="margin:auto;background:pink;"></div>
+</body>
+</html>

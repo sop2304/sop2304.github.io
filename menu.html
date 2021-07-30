@@ -1,0 +1,34 @@
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+
+var menu_text = new sjs.Text("Gummy!",30,"black");
+menu_text.centerH();
+
+var game_text = new sjs.Text("Click on the platform above and drag it to make the best",20,"#ff0");
+game_text.centerH().offset(0, 60);
+
+var game_text = new sjs.Text("path to get to the tiktak boxes!",20,"#ff0");
+game_text.centerH().offset(0, 90);
+
+var startBtn = new sjs.Button("Go!", function(){
+window.location = "Gummy.html";
+});
+
+startBtn.center();
+
+
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+
+<div id="target" style="margin:auto;background:pink;"></div>
+</body>
+</html>
+
